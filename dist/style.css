@@ -1,0 +1,42 @@
+.body_head,
+.body_torso {
+  position: absolute;
+  background-color: #272727;
+}
+
+.body {
+  position: relative;
+  width: 250px;
+  height: 300px;
+}
+
+.body.run .body_torso {
+  transform: rotate(12deg);
+}
+
+.body::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: red;
+  left: 50%;
+}
+
+.body_head {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  left: -17px;
+  top: -40px;
+  transform-origin: 50% 100%;
+}
+
+.body_torso {
+  width: 16px;
+  height: 100px;
+  border-radius: 8px;
+  transform-origin: 8px 92px;
+  left: 117px;
+  top: 42px;
+}
